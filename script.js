@@ -67,7 +67,7 @@ function finalizarCompra() {
         return;
     }
 
-    let numero = "5541991530405"; // Seu número
+    let numero = "5541988193348"; // Seu número
     let mensagem = "Olá! Gostaria de fazer o seguinte pedido:%0A%0A";
 
     carrinho.forEach(item => {
