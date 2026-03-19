@@ -24,21 +24,21 @@
 
     <div class="grid">
         <div class="produto">
-            <img src="Imagens/canecaM.jpeg" onclick="abrirModal('Caneca Personalizada', 'Imagens/canecaM.jpeg')" style="cursor: pointer;">
+            <img src="Imagens/canecaM.jpeg" alt="Caneca Personalizada" onclick="abrirModal('Caneca Personalizada', 'Imagens/canecaM.jpeg')" style="cursor: pointer;">
             <h3>Caneca Personalizada</h3>
             <p>R$ 29,90</p>
             <button onclick="adicionarSimples('Caneca Personalizada')">Comprar</button>
         </div>
 
         <div class="produto">
-            <img src="Imagens/canecaL.jpeg" onclick="abrirModal('Caneca Personagens', 'Imagens/canecaL.jpeg')" style="cursor: pointer;">
+            <img src="Imagens/canecaL.jpeg" alt="Caneca Personagens" onclick="abrirModal('Caneca Personagens', 'Imagens/canecaL.jpeg')" style="cursor: pointer;">
             <h3>Caneca Personagens</h3>
             <p>R$ 49,90</p>
             <button onclick="adicionarSimples('Caneca Personagens')">Comprar</button>
         </div>
 
         <div class="produto">
-            <img src="Imagens/canecas.jpeg" onclick="abrirModal('Kit Canecas', 'Imagens/canecas.jpeg')" style="cursor: pointer;">
+            <img src="Imagens/canecas.jpeg" alt="Kit Canecas" onclick="abrirModal('Kit Canecas', 'Imagens/canecas.jpeg')" style="cursor: pointer;">
             <h3>Kit Canecas</h3>
             <p>R$ 59,90</p>
             <button onclick="adicionarSimples('Kit Canecas')">Comprar</button>
@@ -116,20 +116,26 @@
             <p>R$ 12,00</p>
             <button onclick="adicionarSimples('Chaveiro de Acrílico')">Comprar</button>
         </div>
-    </div>
-</section>
+
+        <div class="produto">
+            <img src="Imagens/NESS.jpeg" alt="Necessaire" onclick="abrirModal('Necessaire', 'Imagens/NESS.jpeg')" style="cursor: pointer;">
+            <h3>Necessaire</h3>
+            <p>R$ 10,00</p>
+            <button onclick="adicionarSimples('Necessaire')">Comprar</button>
+        </div> 
+
+    </div> </section>
 
 <div id="modalProduto" class="modal">
     <div class="modal-conteudo">
         <span class="fechar" onclick="fecharModal()">&times;</span>
         <div class="modal-flex">
             <div class="fotos-vitrine">
-                <img id="fotoPrincipal" src="" alt="Produto Principal" style="width: 100%; max-width: 350px; border-radius: 10px;">
+                <img id="Imagens/real2.jpg" src="" alt="Produto Principal" style="width: 100%; max-width: 350px; border-radius: 10px;">
                 
                 <div id="miniaturasContainer" class="miniaturas" style="display: flex; gap: 10px; margin-top: 15px;">
                 </div>
             </div>
-            
             
             <div class="info-produto">
                 <h2 id="modalNome">Nome do Produto</h2>
